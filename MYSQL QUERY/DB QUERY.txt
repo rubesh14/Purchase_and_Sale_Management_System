@@ -1,0 +1,41 @@
+database: 'rubesh'
+
+-> use rubesh
+
+
+show tables;
+tables_in_rubesh
+
+	company
+	items	
+	purchase
+	purchase_items
+	sales_items
+
+
+
+table 1: 'company' : COMPANY LIST
+CREATE TABLE:
+-> create table company(company_id int(10) primary key not null, company_name varchar(50), cash_balance int(10);
+INSERT TABLE:
+-> insert into company(company_id, company_name, cash_balance) values(1001, siva_kadai, 10000);
+
+
+table 2: 'purchase_items' : HISTORY MAINTAINED
+CREATE TABLE:
+-> create table purchase_items(purchase_id int(10) primary key not null, purchase_name varchar(10), date_time timestamp, quantity int(10), rate int(10), amount int(10));
+
+
+table 3: 'items' : STOCK ITEMS
+CREATE TABLE:
+-> create table items(item_id int(10) primary key not null, item_name varchar(10), date_time timestamp, quantity int(10),rate int(10), amount int(10)); 
+
+
+table 4: 'purchase' : PURCHASE ITEMS
+CREATE TABLE:
+-> create table items(p_id int(10) primary key not null, p_name varchar(10), p_date_time timestamp, p_quantity int(10),p_rate int(10), p_amount int(10)); 
+
+
+table 5: 'sales_items' : SALES HISTORY
+CREATE TABLE:
+-> create table sales_items(sales_id int(10) primary key not null, sales_name varchar(10), date_time timestamp, quantity int(10),rate int(10), amount int(10)); 
