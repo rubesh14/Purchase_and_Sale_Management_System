@@ -1,0 +1,2 @@
+# Purchase_and_Sale_Management_System
+Using Flask
